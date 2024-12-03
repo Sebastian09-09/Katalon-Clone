@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Replicator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="erep.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div><h1 style="display: inline-block;">Event Replicator</h1> <a style="color: red;" href="/emon.html">Open Event Monitor &#8599;</a></div>
+    <div id="settings" data-value="off" style="display: block;">
+      <div style="display: flex; flex-direction: row; justify-content: space-between; gap: 10px;">
+        <!-- <button style="background-color: rgb(136, 136, 0);" id="exportCSV">Export</button>
+        <button style="background-color: rgb(136, 136, 0);" id="exportCSV">Import</button> -->
+        
+        <button id="start" style="background-color: green;" >Start</button>
+        <button disabled id="stop" style="background-color: red;">Stop</button>
+        <div style="display: flex; flex-direction: column; width: 50%;">
+          <label for="delay">Delay (seconds)</label>
+          <input id="delay" value="2" style="width: 100%; font-size: 14px;" type="number" min="1">
+        </div>
+      </div>
+    
+      <div style="overflow: auto; padding: 5px; min-height: 100px; max-height: 400px; width: 100%;"  id="logs">
+        <table id="tableLogs" style="width: 100%; text-align: left;">
+          <thead>
+            <tr>
+              <th width="25%">
+                Event
+              </th>
+              <th width="50%">
+                Path
+              </th>
+              <th width="25%">
+                Input
+              </th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+
+      <div style="border: 1px solid lightgrey; width: 100%; padding: 4px;" id="output">
+        Output <hr>
+      </div>
+    
+    </div>
+    <div id="suitesList" class="suites">
+      <form id="newSuite">
+      </form>
+    </div>
+  </div>
+</body>
+</html>

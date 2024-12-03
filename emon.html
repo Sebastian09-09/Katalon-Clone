@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Monitor</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="emon.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div><h1 style="display: inline-block;">Event Monitor</h1> <a style="color: red;" href="/erep.html">Open Event Replicator &#8599;</a></div>
+    <div id="settings" data-value="off"  style="display: block;">
+     <!-- <button id="record" style="background-color: green;" >Record</button>
+      <button id="stop" style="background-color: red;">Stop</button>
+    -->
+    <div style="overflow: auto; padding: 5px; min-height: 100px; max-height: 400px; width: 100%;"  id="logs">
+      <table id="tableLogs" style="width: 100%; text-align: left;">
+        <tr>
+          <th width="25%">
+            Event
+          </th>
+          <th width="50%">
+            Path
+          </th>
+          <th width="25%">
+            Input
+          </th>
+        </tr>
+      </table>
+    </div>
+    
+    </div>
+    <div id="suitesList" class="suites">
+      <form id="newSuite">
+        <input id="suiteInput" class="add-test-suite suite" type="text" placeholder="+ Add Test Suite">
+      </form>
+    </div>
+  </div>
+</body>
+</html>

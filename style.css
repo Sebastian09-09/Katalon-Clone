@@ -1,0 +1,56 @@
+.container{
+    max-width: 600px;
+    margin: auto;
+}
+
+.suites{
+    width: 100%;
+    font-size: 16px;
+}
+
+.suite{
+    padding: 5px;
+    background-color: lightgrey;
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+
+.add-test-suite{
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: inherit;
+}
+
+input:focus{
+    outline: none;
+}
+
+.deleteSuite{
+    cursor: pointer;
+}
+
+.suiteName{
+    cursor: pointer;
+}
+
+button{
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    width: 50%;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 500ms ease scale;
+    color: white;
+}
+
+
+button:hover{
+    scale: 1.03;
+}
+
+button:disabled{
+    scale: 1;
+    filter: grayscale(0.6);
+    cursor: default;
+}
