@@ -1,2 +1,2 @@
 # Katalon-Clone
-katalone like chrome ext.
+Chrome Extension to Record and Playback user Activity
